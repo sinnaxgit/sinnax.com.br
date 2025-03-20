@@ -84,10 +84,11 @@ Empreendedora, Soluções Elétricas`,
         
       ],
       technologies: [
-        { name: 'JavaScript, HTML, CSS', category: 'Frontend' },
-        { name: 'Node.js ', category: 'Backend' },
-        { name: 'Supabase', category: 'Database' },
-
+        { name: 'JavaScript', category: 'Frontend' },
+        { name: 'HTML', category: 'Frontend' },
+        { name: 'CSS', category: 'Frontend' },
+        { name: 'Node.js', category: 'Backend' },
+        { name: 'Supabase', category: 'Database' }
       ],
       images: [
         'https://images.unsplash.com/photo-1579621970588-a35d0e7ab9b6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80',

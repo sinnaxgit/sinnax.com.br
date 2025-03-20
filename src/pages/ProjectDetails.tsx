@@ -66,9 +66,9 @@ const ProjectDetails = () => {
 
 Com a implementação do *Sistema OS*, nossos clientes relataram:
 
-✔️ Redução de 50% no tempo gasto com a administração de ordens de serviço.
-✔️ Aumento de 40% na taxa de retorno de clientes, devido à melhoria no atendimento.
-✔️ Diminuição de erros operacionais e otimização dos processos internos.
+✔️ Redução de 50% no tempo gasto com a administração de ordens de serviço. <br>
+✔️ Aumento de 40% na taxa de retorno de clientes, devido à melhoria no atendimento. <br>
+✔️ Diminuição de erros operacionais e otimização dos processos internos. <br>
 
 "O Sistema OS revolucionou a forma como gerencio meus serviços. Antes, perdia tempo organizando papéis e respondendo clientes manualmente. Agora, tudo é automatizado e muito mais profissional!"
 

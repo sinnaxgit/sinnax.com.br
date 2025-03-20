@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 270 15% 10%;
+    --foreground: 0 0% 98%;
+
+    --card: 270 15% 15%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 270 15% 15%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 285 80% 55%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 240 40% 65%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 270 15% 20%;
+    --muted-foreground: 240 5% 75%;
+
+    --accent: 20 100% 65%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 270 15% 25%;
+    --input: 270 15% 25%;
+    --ring: 285 80% 55%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    background-image: linear-gradient(to bottom, rgba(26, 31, 44, 0.97), rgba(26, 31, 44, 0.97)), url('/lovable-uploads/0a6745c2-1f51-4b19-964c-953386546154.png');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+  }
+}
+
+@layer components {
+  .sinnax-container {
+    @apply max-w-4xl mx-auto p-4 sm:p-6 md:p-8;
+  }
+
+  .sinnax-card {
+    @apply bg-card/90 backdrop-blur-sm border border-border/50 rounded-xl shadow-xl p-6;
+  }
+
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-sinnax-gradient;
+  }
+
+  .button-primary {
+    @apply bg-primary hover:bg-primary/90 text-primary-foreground px-6 py-3 rounded-lg transition-all transform hover:scale-105 font-medium;
+  }
+
+  .button-secondary {
+    @apply bg-secondary hover:bg-secondary/90 text-secondary-foreground px-6 py-3 rounded-lg transition-all transform hover:scale-105 font-medium;
+  }
+
+  .form-field {
+    @apply mb-6;
+  }
+
+  .form-input {
+    @apply w-full bg-muted border border-border rounded-lg px-4 py-3 text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50;
+  }
+
+  .checkbox-container {
+    @apply bg-muted/50 hover:bg-muted border border-border rounded-lg p-4 transition-colors cursor-pointer;
+  }
+
+  .checkbox-container.selected {
+    @apply bg-primary/10 border-primary/50;
+  }
+}

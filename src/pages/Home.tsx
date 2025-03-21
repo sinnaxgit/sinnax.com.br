@@ -129,7 +129,7 @@ const Home = () => {
                 className="px-8 py-3 bg-gray-800 rounded-lg font-medium hover:bg-gray-700 transition-all duration-300 border border-gray-700"
               >
                 Fale Conosco
-              </a>
+              </Link>
             </motion.div>
           </motion.div>
         </div>

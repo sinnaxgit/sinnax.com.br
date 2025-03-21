@@ -125,7 +125,7 @@ const Home = () => {
                 Ver Portfólio
               </Link>
               <Link
-                to="/contact"
+                to="/form"
                 className="px-8 py-3 bg-gray-800 rounded-lg font-medium hover:bg-gray-700 transition-all duration-300 border border-gray-700"
               >
                 Fale Conosco

@@ -64,13 +64,8 @@ const ProjectDetails = () => {
       solution: 'Desenvolvemos uma plataforma leve e acessível, baseada na nuvem, permitindo que os usuários gerenciem ordens de serviço de qualquer dispositivo. Implementamos funcionalidades como geração automática de OS, histórico detalhado de clientes e serviços, além de integração com WhatsApp para envio de atualizações em tempo real.',
       results: `*Resultados*
 
-Com a implementação do *Sistema OS*, nossos clientes relataram:
+Com a implementação do Sistema OS, nossos clientes relataram uma redução de 50% no tempo gasto com a administração de ordens de serviço, um aumento de 40% na taxa de retorno de clientes devido à melhoria no atendimento e uma diminuição de erros operacionais, otimizando os processos internos. Com a implementação do Sistema OS, nossos clientes relataram uma redução de 50% no tempo gasto com a administração de ordens de serviço, um aumento de 40% na taxa de retorno de clientes devido à melhoria no atendimento e uma diminuição de erros operacionais, otimizando os processos internos.
 
-✔️ Redução de 50% no tempo gasto com a administração de ordens de serviço. <br>
-✔️ Aumento de 40% na taxa de retorno de clientes, devido à melhoria no atendimento. <br>
-✔️ Diminuição de erros operacionais e otimização dos processos internos. <br>
-
-"O Sistema OS revolucionou a forma como gerencio meus serviços. Antes, perdia tempo organizando papéis e respondendo clientes manualmente. Agora, tudo é automatizado e muito mais profissional!"
 
 Ana Martins
 Empreendedora, Soluções Elétricas`,

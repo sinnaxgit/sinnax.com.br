@@ -73,32 +73,32 @@ const About = () => {
 
   const timeline = [
     {
-      year: '2018',
+      year: '2020',
       title: 'Fundação da Sinnax',
       description: 'A Sinnax foi fundada com a missão de criar soluções digitais inovadoras que realmente fazem a diferença para os clientes.'
     },
     {
-      year: '2019',
+      year: '2021',
       title: 'Primeiros Grandes Projetos',
       description: 'Conquistamos nossos primeiros clientes de grande porte e expandimos nossa equipe para atender à crescente demanda.'
     },
     {
-      year: '2020',
+      year: '2022',
       title: 'Expansão e Novos Serviços',
       description: 'Ampliamos nosso portfólio de serviços para incluir desenvolvimento mobile e soluções de e-commerce avançadas.'
     },
     {
-      year: '2021',
+      year: '2023',
       title: 'Reconhecimento no Mercado',
-      description: 'Fomos reconhecidos como uma das empresas mais inovadoras do setor, com diversos prêmios e menções na mídia especializada.'
+      description: 'Fomos reconhecidos como uma das empresas inovadoras do setor, com diversas menções na mídia.'
     },
     {
-      year: '2022',
+      year: '2024',
       title: 'Internacionalização',
       description: 'Iniciamos nossa expansão internacional, com projetos em diversos países da América Latina e Europa.'
     },
     {
-      year: '2023',
+      year: '2025',
       title: 'Presente e Futuro',
       description: 'Continuamos a crescer e inovar, sempre com o compromisso de oferecer as melhores soluções digitais para nossos clientes.'
     }
@@ -240,7 +240,7 @@ const About = () => {
       </section>
 
       {/* Timeline */}
-      <section className="py-20 bg-black border-b border-white/10">
+{/*       <section className="py-20 bg-black border-b border-white/10">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div 
             className="max-w-4xl mx-auto text-center mb-16"
@@ -296,10 +296,10 @@ const About = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Team */}
-      <section className="py-20 bg-black border-b border-white/10">
+{/*       <section className="py-20 bg-black border-b border-white/10">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div 
             className="max-w-4xl mx-auto text-center mb-16"
@@ -357,7 +357,7 @@ const About = () => {
             </Link>
           </motion.div>
         </div>
-      </section>
+      </section> */}
 
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-r from-purple-900 via-pink-900 to-orange-900">

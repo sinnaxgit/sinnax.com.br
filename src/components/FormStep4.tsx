@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useForm } from '../contexts/FormContext';
-import { LeadFormData, submitFormToSupabase } from '../services/supabaseService';
 import { useToast } from '@/hooks/use-toast';
+import emailjs from '@emailjs/browser';
 
 const FormStep4: React.FC = () => {
   const { formData, updateFormData, prevStep, setIsSubmitting, setIsSubmitted } = useForm();
@@ -56,37 +56,42 @@ const FormStep4: React.FC = () => {
       return;
     }
     
-    // Prepare data for Supabase
-    const supabaseData: LeadFormData = {
-      company_name: formData.companyName,
-      business_area: formData.businessArea,
-      site_types: formData.siteTypes,
-      other_site_type: formData.otherSiteType,
-      features: formData.features,
-      other_feature: formData.otherFeature,
-      budget: formData.budget,
-      timeline: formData.timeline,
-      full_name: formData.fullName,
-      email: formData.email,
-      whatsapp: formData.whatsapp
-    };
-    
     setIsSubmitting(true);
     
     try {
-      const result = await submitFormToSupabase(supabaseData);
-      
-      if (result.success) {
-        setIsSubmitted(true);
-        toast({
-          title: "Formulário enviado com sucesso!",
-          description: "Entraremos em contato em breve.",
-        });
-      } else {
-        throw new Error('Falha ao enviar o formulário');
-      }
+      // Prepare email template data
+      const emailData = {
+        to_name: "Sinnax",
+        to_email: 'sinnaxbrasil@gmail.com',
+        from_name: formData.fullName,
+        from_email: formData.email,
+        message: `
+Nome da Empresa: ${formData.companyName}
+Área de Atuação: ${formData.businessArea}
+Tipo de Site: ${formData.siteTypes.join(', ')}
+${formData.otherSiteType ? `Outro tipo: ${formData.otherSiteType}` : ''}
+Funcionalidades: ${formData.features.join(', ')}
+${formData.otherFeature ? `Outra funcionalidade: ${formData.otherFeature}` : ''}
+Orçamento: ${formData.budget}
+Prazo: ${formData.timeline}
+WhatsApp: ${formData.whatsapp}`,
+      };
+
+      await emailjs.send(
+        'service_cux5r88',
+        'template_qxx2q1d', // Corrigido o template ID
+        emailData,
+        'UkKMBT3Shfiqy0KPv'
+      );
+
+      setIsSubmitted(true);
+      toast({
+        title: "Formulário enviado com sucesso!",
+        description: "Entraremos em contato em breve.",
+        variant: "default",
+      });
     } catch (error) {
-      console.error('Error submitting form:', error);
+      console.error('Erro ao enviar formulário:', error);
       toast({
         title: "Erro ao enviar formulário",
         description: "Por favor, tente novamente em alguns instantes.",

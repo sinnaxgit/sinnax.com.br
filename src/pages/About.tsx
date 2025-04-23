@@ -257,7 +257,6 @@ const About = () => {
           </motion.div>
           
           <div className="relative">
-            {/* Timeline line */}
             <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-gray-700"></div>
             
             <div className="space-y-16">

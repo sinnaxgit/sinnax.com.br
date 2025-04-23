@@ -118,7 +118,7 @@ const Contact = () => {
                     <div>
                       <h3 className="font-semibold mb-1">Email</h3>
                       <a href="mailto:contato@sinnax.com" className="text-gray-300 hover:text-white transition-colors duration-300">
-                        contato@sinnax.com
+                        contato@sinnax.com.br
                       </a>
                     </div>
                   </div>
@@ -129,8 +129,8 @@ const Contact = () => {
                     </div>
                     <div>
                       <h3 className="font-semibold mb-1">Telefone</h3>
-                      <a href="tel:+5511999999999" className="text-gray-300 hover:text-white transition-colors duration-300">
-                        +55 (31) 97133-3286
+                      <a href="tel:+5531996274515" className="text-gray-300 hover:text-white transition-colors duration-300">
+                        +55 (31) 99627-4515
                       </a>
                     </div>
                   </div>

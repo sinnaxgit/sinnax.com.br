@@ -5,6 +5,7 @@ import { ArrowRight, Filter } from 'lucide-react';
 import ResfriaBrasil from '../assets/ResfriaBrasil.png';
 import Gustavo from '../assets/Gustavo.png';
 import OS from '../assets/OS.png';
+import Cinewave from '../assets/Cinewave.png';
 
 const Portfolio = () => {
   const [filter, setFilter] = useState('all');
@@ -48,15 +49,18 @@ const Portfolio = () => {
       description: 'Desenvolva sistemas internos eficientes para otimizar processos e melhorar a produtividade da sua equipe.'
     },
     
-    /*
+    
     {
       id: 4,
-      title: 'Site Institucional',
+      title: 'Site de filmes',
       category: 'web',
       tags: ['Next.js', 'Tailwind CSS', 'Framer Motion'],
-      image: 'https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80',
-      description: 'Site institucional moderno com animações fluidas e design responsivo.'
+      image: Cinewave,
+      externalUrl: 'https://cinewave.sinnax.com.br/',
+      description: 'Site para Avaliação de filmes moderno com animações fluidas e design responsivo.'
     },
+
+      /*
     {
       id: 5,
       title: 'Marketplace de Serviços',

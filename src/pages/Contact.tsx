@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Mail, Phone, MapPin, Send, CheckCircle } from 'lucide-react';
-import { supabase } from '@/integrations/supabase/client';
+import emailjs from '@emailjs/browser';
+// Remova esta linha
+// import { supabase } from '@/integrations/supabase/client';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -29,19 +31,20 @@ const Contact = () => {
     setFormStatus({ submitted: false, submitting: true, error: false });
 
     try {
-      const { error } = await supabase
-        .from('contacts')
-        .insert([{
+      await emailjs.send(
+        'service_cux5r88',
+        'template_qxx2q1d',
+        {
           name: formData.name,
           email: formData.email,
-          phone: formData.phone,
+          phone: formData.phone || 'Não informado',
+          service: formData.service || 'Não selecionado',
           subject: formData.subject,
           message: formData.message,
-          service: formData.service,
-          created_at: new Date().toISOString()
-        }]);
-
-      if (error) throw error;
+          to_email: 'sinnaxbrasil@gmail.com',
+        },
+        'UkKMBT3Shfiqy0KPv'
+      );
 
       setFormStatus({ submitted: true, submitting: false, error: false });
       setFormData({
@@ -53,7 +56,7 @@ const Contact = () => {
         service: ''
       });
     } catch (error) {
-      console.error('Error submitting form:', error);
+      console.error('Erro ao enviar email:', error);
       setFormStatus({ submitted: false, submitting: false, error: true });
     }
   };

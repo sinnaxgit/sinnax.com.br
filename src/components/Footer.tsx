@@ -81,13 +81,13 @@ const Footer = () => {
               <li className="flex items-center">
                 <Mail className="h-4 w-4 mr-2 text-purple-500" />
                 <a href="mailto:contato@sinnax.com" className="text-gray-400 hover:text-white transition-colors duration-300">
-                  contato@sinnax.com
+                  contato@sinnax.com.br
                 </a>
               </li>
               <li className="flex items-center">
                 <Phone className="h-4 w-4 mr-2 text-purple-500" />
-                <a href="tel:+5531971333286" className="text-gray-400 hover:text-white transition-colors duration-300">
-                  +55 (31) 97133-3286
+                <a href="tel:+5531996274515" className="text-gray-400 hover:text-white transition-colors duration-300">
+                  +55 (31) 99627-4515
                 </a>
               </li>
               {/* <li className="flex items-center">

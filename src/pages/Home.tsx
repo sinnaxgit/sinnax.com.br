@@ -2,9 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Code, Layers, Zap, Monitor, Database, Server, ArrowRight } from 'lucide-react';
-import ResfriaBrasil from '../assets/ResfriaBrasil.png';
-import Gustavo from '../assets/Gustavo.png';
-import OS from '../assets/OS.png';
+import ResfriaBrasil from '../assets/ResfriaBrasil.jpg';
+import Gustavo from '../assets/Gustavo.jpg';
+import OS from '../assets/OS.jpg';
 
 const Home = () => {
   const fadeIn = {

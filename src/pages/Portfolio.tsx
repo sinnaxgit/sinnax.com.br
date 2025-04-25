@@ -2,10 +2,10 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { ArrowRight, Filter } from 'lucide-react';
-import ResfriaBrasil from '../assets/ResfriaBrasil.png';
-import Gustavo from '../assets/Gustavo.png';
-import OS from '../assets/OS.png';
-import Cinewave from '../assets/Cinewave.png';
+import ResfriaBrasil from '../assets/ResfriaBrasil.jpg';
+import Gustavo from '../assets/Gustavo.jpg';
+import OS from '../assets/OS.jpg';
+import Cinewave from '../assets/Cinewave.jpg';
 
 const Portfolio = () => {
   const [filter, setFilter] = useState('all');
